@@ -92,17 +92,18 @@ spec:
         requests:
           storage: 12Gi
       volumeName: grafana-pv
----
-apiVersion: v1
-kind: PersistentVolume
-metadata:
-  name: grafana-pv
-  annotations:
-spec:
-  accessModes:
-  - ReadWriteOnce
-  storageClassName: longhorn
-  capacity: 
-    storage: "15Gi"
-  volumeMode: "Filesystem"
-  persistentVolumeReclaimPolicy: "Delete"
+#---
+#apiVersion: v1
+#kind: PersistentVolume
+#metadata:
+#  name: grafana-pv
+#  annotations:
+#spec:
+#  accessModes:
+#  - ReadWriteOnce
+#  storageClassName: longhorn
+#  capacity: 
+#    storage: "15Gi"
+#  volumeMode: "Filesystem"
+#  persistentVolumeReclaimPolicy: "Delete"
+#
