@@ -61,7 +61,7 @@ spec:
       terminationGracePeriodSeconds: 30
       containers:
         - name: grafana
-          image: "grafana:11.2.1"
+          image: "grafana/grafana:11.3.0"
           imagePullPolicy: IfNotPresent
           resources:
             limits:
