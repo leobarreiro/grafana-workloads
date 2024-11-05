@@ -11,6 +11,10 @@ metadata:
     nginx.org/client-max-body-size: "0"
 spec:
   ingressClassName: nginx
+  tls:
+  - hosts:
+    - desa-qa.bancontinental.com.py
+    secretName: comodin-2024
   rules:
   - host: grafana-qa.bancontinental.com.py
     http:
