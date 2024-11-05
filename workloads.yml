@@ -104,5 +104,5 @@ spec:
   storageClassName: longhorn
   capacity: 
     storage: "15Gi"
-  volumeMode: "FileSystem"
+  volumeMode: "Filesystem"
   persistentVolumeReclaimPolicy: "Delete"
