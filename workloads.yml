@@ -84,10 +84,11 @@ spec:
   - metadata:
       name: grafana-storage
       annotations:
-        volume.alpha.kubernetes.io/storage-class: longhorn
+        volume.alpha.kubernetes.io/storage-class: local-path
     spec:
-      accessModes: [ ReadWriteOnce ]
-      storageClassName: longhorn
+      accessModes:
+      - ReadWriteOnce
+      storageClassName: local-path
       resources:
         requests:
           storage: 12Gi
