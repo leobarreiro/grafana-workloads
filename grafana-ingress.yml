@@ -7,7 +7,6 @@ metadata:
     app: grafana-app
     group: devops
   annotations:
-    kubernetes.io/ingress.class: nginx
     nginx.ingress.kubernetes.io/proxy-body-size: "0"
     nginx.org/client-max-body-size: "0"
 spec:
